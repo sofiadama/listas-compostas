@@ -15,11 +15,13 @@ else:
         
     def media():
             return sum(elementos) / len(elementos)
+    print()
+    print(f'Matriz: {elementos}')
     
     if aritmetica == 'S':
         resultado = soma()
-        print(f'Soma: {resultado}')
+        print(f'Soma: {resultado:.1f}')
         
     elif aritmetica == 'M':
         resultado = media()
-        print(f'Média: {resultado}')
+        print(f'Média: {resultado:.1f}')
