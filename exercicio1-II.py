@@ -1,8 +1,7 @@
 Q = int(input('Cidadãos: '))
 
-if Q < 4 and Q > 233000:
+if Q < 4 or Q > 233000:
     print('Valor inválido!')
-    Q = int(input('Digite novamente: '))
    
 else:
     Vi = list(map(int,input('Digite 1 ou 0: ').split()))[:Q]
@@ -16,8 +15,8 @@ else:
             N += 1
             
     if S > N:
-        print(S)
+        print('S')
     elif N > S:
-        print(N)
+        print('N')
     else:
         print('Empate')
